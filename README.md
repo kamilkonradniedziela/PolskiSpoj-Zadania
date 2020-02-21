@@ -1,1 +1,1 @@
-Repozytorium zaweira zadania ze strony POLSKI SPOJ.
+Repozytorium zawiera zadania ze strony POLSKI SPOJ.
