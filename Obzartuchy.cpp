@@ -18,6 +18,6 @@ int main()
 			std::cin >> czas;
 			zjedzone += (doba / czas);
 		}
-		std::cout <<ceil(zjedzone / lbCiastekWopakowaniu);
+		std::cout <<ceil(zjedzone / lbCiastekWopakowaniu)<<std::endl;
 	}
 }
