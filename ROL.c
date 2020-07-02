@@ -1,24 +1,23 @@
 #define _CRT_SECURE_NO_WARNINGS
-#include <stdlib.h>
 #include <stdio.h>
 
 int main()
 {
-    int ileLb, oIleLb, liczba;
-    scanf("%d", &ileLb);
-    scanf("%d", &oIleLb);
-    int* tab = malloc(ileLb * sizeof(int));
-    for (int i = 0; i < ileLb; i++)
+    int testy,n;
+    scanf("%d", &testy);
+    while (testy--)
     {
-        scanf("%d", &liczba);
-        tab[i] = liczba;
-    }
-    for (int i = oIleLb; i < ileLb; i++)
-    {
-        printf("%d ", tab[i]);
-    }
-    for (int i = 0; i < oIleLb; i++)
-    {
-        printf("%d ", tab[i]);
+        scanf("%d", &n);
+        int * tab = malloc(n * sizeof(int));
+        for (int i = 0; i < n; i++)
+        {
+            scanf("%d", &tab[i]);
+        }
+        for (int i = 1; i < n; i++)
+        {
+            printf("%d ", tab[i]);
+        }
+        printf("%d\n", tab[0]);
+        free(tab);
     }
 }
